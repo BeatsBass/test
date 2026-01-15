@@ -1,16 +1,16 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
+  title: "Llamativa - Anuncios y Publicidad.",
   author: "Alejandro Múnez Cuntez",
   description:
     "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/images.png",
   navLinks: [
-    { text: "Experience", href: "#experience" },
-    { text: "Projects", href: "#projects" },
-    { text: "About", href: "#about" },
+    { text: "Experiencia", href: "#experience" },
+    { text: "Proyectos", href: "#projects" },
+    { text: "Contacto", href: "#about" },
   ],
   socialLinks: [
     { text: "Twitter", href: "https://github.com/immois/astro-zen" },
@@ -25,11 +25,12 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Llamativa",
+    specialty: "Anuncios y Publicidad",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Anuncios de data y más.",
+    email: "https://api.whatsapp.com/send/?phone=51914042323&text&type=phone_number&app_absent=0",
+    imagenBackground: "/1.jpg"
   },
   experience: [
     {

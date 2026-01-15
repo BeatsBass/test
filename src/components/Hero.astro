@@ -2,26 +2,41 @@
 import type { HeroProps } from "@types";
 type Props = HeroProps;
 
-const { name, specialty, summary, email } = Astro.props;
+const { name, specialty, summary, email, imagenBackground } = Astro.props;
 ---
 
-<section class="py-24 md:py-32" id="#hero">
-  <h1
-    class="mb-1.5 font-serif text-7xl font-bold tracking-tightest text-white sm:text-8xl md:mb-0 md:text-9xl"
-  >
-    {name}
-  </h1>
-  <p
-    class="mb-9 font-serif text-4xl leading-[46px] font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl"
-  >
-    {specialty}
-  </p>
-  <p class="mb-16 text-base font-normal text-neutral md:text-lg">
-    {summary}
-  </p>
+<section
+  id="hero"
+  class="relative overflow-hidden bg-cover bg-center py-24 md:py-32 rounded-[29px]"
+  style={`background-image: url(${imagenBackground});`}
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
 
-  <a
-    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={`mailto:${email}`}>Get in Touch</a
-  >
+  <!-- Content -->
+  <div class="relative z-10 max-w-5xl px-5 mx-auto">
+    <h1
+      class="mb-1.5 font-serif text-7xl font-bold tracking-tightest text-white sm:text-8xl md:mb-0 md:text-9xl"
+    >
+      {name}
+    </h1>
+
+    <p
+      class="mb-9 font-serif text-4xl leading-[46px] font-bold tracking-tighter text-white/90 sm:text-5xl md:text-6xl"
+    >
+      {specialty}
+    </p>
+
+    <p class="mb-16 max-w-xl text-base font-normal text-white/70 md:text-lg">
+      {summary}
+    </p>
+
+    <a
+      class="inline-block rounded-full bg-[#25D366] px-8 py-5 text-sm font-medium text-white shadow-lg hover:opacity-90 transition"
+      href={email}
+    >
+      WhatsApp
+    </a>
+  </div>
 </section>
+
