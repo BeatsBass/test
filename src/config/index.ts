@@ -2,7 +2,7 @@ import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
   title: "Llamativa - Anuncios y Publicidad.",
-  author: "Alejandro Múnez Cuntez",
+  author: "Llamativa - Cusco",
   description:
     "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
   lang: "en",
@@ -13,11 +13,8 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Contacto", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "TikTok", href: "https://google.com.pe" },
+    { text: "Facebook", href: "https://google.com.pe" }
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -33,7 +30,7 @@ export const SITE_CONTENT: SiteContent = {
     imagenBackground: "/1.jpg"
   },
   experience: [
-    {
+    /*{
       company: "Zalmart",
       position: "Lead Android Developer",
       startDate: "May 2018",
@@ -61,10 +58,10 @@ export const SITE_CONTENT: SiteContent = {
       endDate: "Oct 2016",
       summary:
         "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
-    },
+    },*/
   ],
   projects: [
-    {
+    /*{
       name: "Spotifu Music",
       summary: "A music streaming app that emulates Spotify's core features.",
       linkPreview: "/",
@@ -84,15 +81,12 @@ export const SITE_CONTENT: SiteContent = {
       linkPreview: "/",
       linkSource: "https://github.com/immois/astro-zen",
       image: "/clone-ig.png",
-    },
+    },*/
   ],
   about: {
-    description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
-
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
-    `,
-    image: "/alejandro-big.jpg",
+    description: ` Hola como estás.
+      `,
+    image: "/images.png",
   },
 };
 
